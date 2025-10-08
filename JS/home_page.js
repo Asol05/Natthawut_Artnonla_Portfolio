@@ -28,3 +28,12 @@ function initbtn(){
         }
     })
 }
+
+function hideshowsidebar(){
+    if(window.innerWidth > 560){
+        showsidebar.style.display = 'none'
+    }
+}
+
+setInterval(hideshowsidebar, 50);
+
