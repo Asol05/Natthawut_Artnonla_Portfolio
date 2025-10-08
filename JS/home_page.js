@@ -6,11 +6,18 @@ var sidebar = null
 var closesidebar = null
 var showsidebar = null
 
+function hideshowsidebar(){
+    if(window.innerWidth > 560){
+        showsidebar.style.display = 'none'
+    }
+}
+
 function pagelond(){
     menu = document.getElementById('menu')
     sidebar = document.getElementById('side-menubar')
     closesidebar = document.getElementById('closesidebar')
     showsidebar = document.getElementById('showsidebar')
+    setInterval(hideshowsidebar, 50);
     initbtn()
 }
 
@@ -29,11 +36,4 @@ function initbtn(){
     })
 }
 
-function hideshowsidebar(){
-    if(window.innerWidth > 560){
-        showsidebar.style.display = 'none'
-    }
-}
-
-setInterval(hideshowsidebar, 50);
 
