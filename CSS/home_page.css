@@ -531,4 +531,13 @@ a{
         height: 20px;
         margin-right: 5px;
     }
+
+}
+@media (width > 560px){
+    #showsidebar{
+        display: none;
+    }
+    #side-menubar{
+        display: none;
+    }
 }
