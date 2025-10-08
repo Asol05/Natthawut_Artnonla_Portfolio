@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body , html{
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-size: cover ;
+}
+
+.Topic{
+    justify-self: center;
+    align-self: center;
+
+    box-shadow: 3px 8px 32px rgb(0,0,0,0.85);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+
+    margin: 50px;
+    padding: 20px;
+}
+#Ingredients_bg , #Instructions_bg{
+    background: url(pic/BackGround/Serene\ Blue\ Mountain\ Landscape.png) center;
+    background-size: cover;
+
+    margin: 30px 0px 30px 0px;
+    padding: 30px;
+}
+#Instructions_bg{
+    background: linear-gradient(rgb(251, 192, 255), rgb(110, 210, 243))
+}
+.container_Ingredients , .container_Instructions{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    box-shadow: 3px 8px 32px rgb(0,0,0,0.85);
+    backdrop-filter: blur(25px);
+    border-radius: 15px;
+    margin: 50px;
+    padding: 20px;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+img{
+    border-radius: 15px;
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 20px 50px 20px;
+}
+a{
+    text-decoration: none;
+}
