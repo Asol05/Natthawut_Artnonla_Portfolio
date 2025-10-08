@@ -1,14 +1,17 @@
-console.log("init")
 window.onload = pagelond;
 
 var menu = null
 var sidebar = null
 var closesidebar = null
 var showsidebar = null
+var sidebarIsOpen = fales
 
 function hideshowsidebar(){
     if(window.innerWidth > 560){
         showsidebar.style.display = 'none'
+    }
+    else if(!sidebarIsOpen){
+        showsidebar.style.display = 'flex'
     }
 }
 
@@ -25,15 +28,18 @@ function initbtn(){
     showsidebar.addEventListener("click" , () => {
         sidebar.style.display = 'flex'
         showsidebar.style.display = 'none'
+        sidebarIsOpen = true
     })
     closesidebar.addEventListener("click" , () =>{
         sidebar.style.display = 'none'
         showsidebar.style.display = 'flex'
+        sidebarIsOpen = fales
 
         if(window.innerWidth > 560){
             showsidebar.style.display = 'none'
         }
     })
 }
+
 
 
