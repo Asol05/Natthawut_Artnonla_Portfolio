@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family:Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background: url(Picture/BackGround/ChatGPT\ Image\ Oct\ 2\,\ 2025\,\ 12_26_32\ AM.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+body > h1{
+    font-size: 50px;
+    text-align: center;
+    margin: 25px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    border-bottom: 2px aliceblue solid;
+    border-top: 2px aliceblue solid;
+    backdrop-filter: blur(50px);
+
+    width: 100%;
+    height: 75px;
+}
+.menu > a{
+    font-size: 16px;
+    position: relative;
+    color: aliceblue;
+    text-decoration: none;
+}
+.menu > a::before{
+    content: "";
+    position: absolute;
+    background: white;
+    height: 2px;
+    width: 0;
+    left: 50%;
+    bottom: -8px;
+    transition: 0.25s;
+}
+.menu > a::after{
+    content: "";
+    position: absolute;
+    background: white;
+    height: 2px;
+    width: 0;
+    left: 50%;
+    bottom: -8px;
+    transition: 0.25s;
+}
+.menu > a:hover{
+    opacity: 1;
+}
+.menu > a:hover:before{
+    width: 50%;
+    left: 0;
+}
+.menu > a:hover:after{
+    width: 50%;
+}
+
+#games{
+    width: 100%;
+    padding: 50px;
+    margin-top: 50px;
+}
+#game{
+    width: 100%;
+    border: 1px aliceblue solid;
+    box-shadow: 3px 3px 24px rgb(255, 255, 255, 0.5);
+    border-radius: 24px;
+    padding: 50px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+#game:hover{
+    border: 1px aliceblue solid;
+    box-shadow: 3px 3px 24px rgb(255, 255, 255, 0.5);
+    transition: 0.25s;
+    background: aliceblue;
+    color: black;
+}
+#left{
+    width: 40%;
+    margin-right: 25px;
+}
+#left > a{
+    width: 100%;
+}
+#left> a > img{
+    width: 100%;
+    border-radius: 12px;
+}
+#right{
+    width: 60%;
+}
+#game1{
+    color: green;
+}
+#game2{
+    color: aqua;
+}
+
+/* web */
+#websites , #animations{
+    width: 90%;
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 1px aliceblue solid;
+    box-shadow: 3px 3px 24px rgb(255, 255, 255, 0.5);
+    border-radius: 24px;
+}
+#webcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+#web , #animation{
+    width: 300px;
+    border: 1px aliceblue solid;
+    border-radius: 12px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+#web:hover{
+    transform: scale(1.1);
+    border: 1px aliceblue solid;
+    box-shadow: 3px 3px 24px rgb(255, 255, 255, 0.5);
+    transition: 0.25s;
+}
+#top{
+    width: 100%;
+}
+#top > a , #top > a > img{
+    width: 100%;
+    height: 150px;
+    border-radius: 12px 12px 0 0;
+}
+#bottom{
+    padding: 15px;
+    width: 100%;
+    color: aliceblue;
+    border-radius: 0 0 12px 12px;
+}
+#web:hover > #bottom{
+    background: aliceblue;
+    color: black;
+}
+#bottom > h1{
+    font-size: 22px;
+}
+
+/* Animations */
+#animations > div{
+    display: flex;
+    flex-direction: row;
+}
+#animation:hover{
+    transform: scale(1.1);
+    border: 1px aliceblue solid;
+    box-shadow: 3px 3px 24px rgb(255, 255, 255, 0.5);
+    transition: 0.25s;
+}
+#animation{
+    width: 200px;
+}
+#animation > a{
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+}
+#animation:first-child{
+    background: url(Picture/Project/Animation2.png);
+    background-size: cover;
+    background-position: center;
+}
+#animation:last-child{
+    background: url(Picture/Project/Animation1.png);
+    background-size: cover;
+    background-position: 50% 0%;
+}
+
+@media (width <= 1000px) 
+{
+    #game{
+        flex-direction: column;
+    }
+    #left{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #left > a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #left > a > img{
+        width: 80%;
+    }
+    #right{
+        width: 100%;
+    }
+}
+@media (width <= 825px){
+    #webcontainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #animations > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+} 
+@media (width <= 460px){
+    #games{
+        padding: 15px;
+    }
+    #websites{
+        padding: 15px;
+    }
+    #webcontainer{
+        padding: 0;
+    }
+    #web{
+        margin-top: 15px;
+        width: 200px;
+    }
+}
