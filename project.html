@@ -1,128 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/project.css">
+    <script src="JS/project.js"></script>
 </head>
+
 <body>
-    <h1>MY Projects</h1>
-    <div class="menu">
-        <a href="index.html">Home</a>
-        <a href="#games">Games</a>
-        <a href="#websites">Websites</a>
-        <a href="#animations">Animations</a>
+
+    <!-- Animated background particles -->
+    <div class="bg-particles">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
     </div>
 
-    <div id="games">
-        <h1>Games</h1>
-        <div id="game">
-            <div id="left">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="back-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+            Back
+        </a>
+        <div class="nav-links">
+            <a href="#games" class="nav-link">Games</a>
+            <a href="#models" class="nav-link">Models</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <p class="hero-subtitle">Portfolio</p>
+        <h1 class="hero-title">My <span class="gradient-text">Projects</span></h1>
+        <p class="hero-desc">A collection of games and 3D models I've created.</p>
+    </header>
+
+    <!-- ===== GAMES SECTION ===== -->
+    <section id="games" class="section">
+        <div class="section-header">
+            <div class="section-tag">Category</div>
+            <h2 class="section-title">🎮 Games</h2>
+        </div>
+
+        <!-- Game Card 1 -->
+        <article class="project-card">
+            <div class="card-image">
+                <!-- <a href="https://drive.google.com/file/d/1V4D4Pu9bpTp0AyydatPi5W1kQPouvfk6/view?usp=drive_link"
+                    target="_blank">
+                    <div class="img-container">
+                        <img src="CSS/Picture/Project/HDRP/Screenshot 2025-09-28 013206.png"
+                            alt="Dimention Hero game screenshot">
+                        <div class="image-overlay">
+                            <span class="play-icon">▶ Watch Demo</span>
+                        </div>
+                    </div>
+                </a> -->
+                <a href="https://youtu.be/eJXAXuPKf5o" target="_blank">
+                    <div class="img-container">
+                        <img src="CSS/Picture/Project/Dimension Hero.png" alt="Dimention Hero game screenshot">
+                        <div class="image-overlay">
+                            <span class="play-icon">▶ Watch Demo</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-info">
+                <div class="card-meta">
+                    <span class="badge badge-blue">3D Windowns Game</span>
+                    <span class="badge badge-purple">Group</span>
+                </div>
+                <h3 class="card-title">Dimension Hero</h3>
+                <p class="card-date">📅 25 August – 2 December · 2025</p>
+                <ul class="card-list">
+                    <p class="card-desc">
+                        Served as Lead Programmer in a team-based project using Git for version control.
+                    </p>
+                    <li><span class="list-dot"></span>Implemented design patterns for the player skill system and UI to
+                        improve maintainability and scalability.</li>
+                    <li><span class="list-dot"></span>Applied a lazy update technique to execute logic only when
+                        necessary, avoiding per-frame updates to optimize performance.</li>
+                    <li><span class="list-dot"></span>Structured character systems using the MVC (Model–View–Controller)
+                        pattern to ensure clear separation of responsibilities.</li>
+                    <li><span class="list-dot"></span>Implemented Dynamic UI Instantiation by creating UI as
+                        prefabs—instantiating when needed and destroying when closed instead of using SetActive—reducing
+                        scene modifications and preventing merge conflicts in Git.</li>
+
+                </ul>
+                <a href="https://frame5482.itch.io/dimensionhero" target="_blank" class="card-btn">Download
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <polyline points="7 10 12 15 17 10" />
+                        <line x1="12" y1="15" x2="12" y2="3" />
+                    </svg>
+                </a>
+            </div>
+        </article>
+
+        <!-- Game Card 2 -->
+        <article class="project-card reverse">
+            <div class="card-image">
+                <a href="https://drive.google.com/file/d/1V4D4Pu9bpTp0AyydatPi5W1kQPouvfk6/view?usp=drive_link"
+                    target="_blank">
+                    <div class="img-container">
+                        <img src="CSS/Picture/Project/HDRP/Screenshot 2025-09-28 013206.png"
+                            alt="The Void's Harvest game screenshot">
+                        <div class="image-overlay">
+                            <span class="play-icon">▶ Watch Demo</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-info">
+                <div class="card-meta">
+                    <span class="badge badge-blue">HDRP 3D</span>
+                    <span class="badge badge-purple">Individual</span>
+                </div>
+                <h3 class="card-title">The Void's Harvest</h3>
+                <p class="card-date">📅 25 August – 30 September · 2025</p>
+                <ul class="card-list">
+                    <li><span class="list-dot"></span>Designed and developed a realistic interior environment in Unity
+                        using High Definition Render Pipeline (HDRP).
+                    </li>
+                    <li><span class="list-dot"></span>As part of this project, I sculpted and created at least two
+                        original 3D models, including their custom materials.
+                        I applied advanced lighting techniques and rendering workflows to enhance visual fidelity,
+                        specifically utilizing : Post Processing, Screen Space Ambient Occlusion, Light Baking,
+                        Reflection Probe, Fog & Volumetric Lighting.
+                    </li>
+                </ul>
+                <a href="https://drive.google.com/file/d/1V4D4Pu9bpTp0AyydatPi5W1kQPouvfk6/view?usp=drive_link"
+                    target="_blank" class="card-btn">Watch Demo →</a>
+            </div>
+        </article>
+
+        <!-- Game Card 3 -->
+        <article class="project-card">
+            <div class="card-image">
                 <a href="https://youtu.be/TnqT8OMCmWI" target="_blank">
-                    <img src="CSS/Picture/Project/SweetDream01.png">
+                    <div class="img-container">
+                        <img src="CSS/Picture/Project/SweetDream01.png" alt="SweetDream game screenshot">
+                        <div class="image-overlay">
+                            <span class="play-icon">▶ Watch Demo</span>
+                        </div>
+                    </div>
                 </a>
             </div>
-            <div id="right">
-                <h1 id="game1">SweetDream</h1>
-                <h3>A 2D platformer game</h3>
-                <p>
-                    18 March - 30 May | 2025 | Individual <br><br>
-                    What I have done<br><br>
-                    - Game Design : designed game mechanics 
-                    for a mobile game.<br><br>
-                    - Game Prototype : Developed a prototype to
-                    created a new application on the Google Play Console and Monetize with Unity Ads<br><br>
-                </p>
+            <div class="card-info">
+                <div class="card-meta">
+                    <span class="badge badge-blue">2D Mobile Game</span>
+                    <span class="badge badge-purple">Individual</span>
+                </div>
+                <h3 class="card-title">SweetDream</h3>
+                <p class="card-date">📅 18 March – 30 May · 2025</p>
+                <ul class="card-list">
+                    <li><span class="list-dot"></span>Game Design: Designed game mechanics for a mobile game, defining
+                        objectives, rules, challenges, player controls,
+                        rewards, and feedback to create a unique and engaging experience.</li>
+                    <li><span class="list-dot"></span>Game Prototype: Developed a playable prototype showcasing the core
+                        gameplay and features, applying techniques such
+                        as Tilemap, animation, UI, and post-processing.</li>
+                </ul>
+                <a href="https://youtu.be/TnqT8OMCmWI" target="_blank" class="card-btn">Watch Demo →</a>
             </div>
-        </div>
-        <div id="game">
-            <div id="left">
-                <a href="https://youtu.be/SMgjM12VaTE?si=pZQJ7mC2Y5BUNyD-" target="_blank">
-                    <img src="CSS/Picture/Project/Subject.jpg">
-                </a>
-            </div>
-            <div id="right">
-                <h1 id="game2">Project our Stronghold</h1>
-                <h3>A 3D platformer game</h3>
-                <p>
-                    22 March - 10 May | 2025 | Group name : มิตรสหายไลน์ไม่ตอบ<br><br>
-                    What I have done<br><br>
-                    - Game Design : designed Player abilities gameplay include 3 skills, 1 passive and normalATK
-                    for a mobile game.<br><br>
-                    - Game Prototype : Developed SkillController system and all Player abilities.<br><br>
-                </p>
-            </div>
-        </div>
-    </div>
+        </article>
 
-    <div id="websites">
-        <h1>Websites</h1>
-        <div id="webcontainer">
-            <div id="web">
-                <div id="top">
-                    <a href="Assignment/assignment7/index.html" target="_blank">
-                        <img src="CSS/Picture/Project/As07.png">
-                    </a>
-                </div>
-                <div id="bottom">
-                    <h1>Square game</h1>
-                </div>
+        <!-- Game Card 4 -->
+        <article class="project-card reverse">
+            <div class="card-image">
+                <a href="https://youtu.be/SMgjM12VaTE?si=pZQJ7mC2Y5BUNyD-" target="_blank">
+                    <div class="img-container">
+                        <img src="CSS/Picture/Project/Subject.jpg" alt="Project our Stronghold screenshot">
+                        <div class="image-overlay">
+                            <span class="play-icon">▶ Watch Demo</span>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div id="web">
-                <div id="top">
-                    <a href="Assignment/assignment6/register.html" target="_blank">
-                        <img src="CSS/Picture/Project/As06.png">
-                    </a>
+            <div class="card-info">
+                <div class="card-meta">
+                    <span class="badge badge-blue">3D Windowns Game</span>
+                    <span class="badge badge-purple">Group</span>
                 </div>
-                <div id="bottom">
-                    <h1>Register and login</h1>
-                </div>
+                <h3 class="card-title">Project our Stronghold</h3>
+                <p class="card-date">📅 22 March – 10 May · 2025</p>
+                <p class="card-desc">
+                    First experience working in a team environment, where I was responsible for designing character
+                    abilities and implementing them primarily using List and Dictionary data structures.
+                </p>
+                <ul class="card-list">
+                    <li><span class="list-dot"></span>Game Design: designed Player abilities — 3 skills, 1 passive and
+                        normal ATK.</li>
+                    <li><span class="list-dot"></span>Game Prototype: developed SkillController system and all Player
+                        abilities.</li>
+                </ul>
+                <a href="https://youtu.be/SMgjM12VaTE?si=pZQJ7mC2Y5BUNyD-" target="_blank" class="card-btn">Watch Demo
+                    →</a>
             </div>
-            <div id="web">
-                <div id="top">
-                    <a href="Assignment/assignment5/index.html" target="_blank">
-                        <img src="CSS/Picture/Project/As05.png">
-                    </a>
-                </div>
-                <div id="bottom">
-                    <h1>Blog</h1>
-                </div>
+        </article>
+
+        <!-- Game Card 5 -->
+        <article class="project-card">
+            <div class="card-image">
+                <a href="https://youtu.be/2i_4KTPqQ7w?si=im1fEBVbJIatMyiv" target="_blank">
+                    <div class="img-container">
+                        <img src="CSS/Picture/Project/Magia roulette.png" alt="Magia roulettet">
+                        <div class="image-overlay">
+                            <span class="play-icon">▶ Watch Demo</span>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div id="web">
-                <div id="top">
-                    <a href="Assignment/assignment4/recipe.html" target="_blank">
-                        <img src="CSS/Picture/Project/As04.png">
-                    </a>
+            <div class="card-info">
+                <div class="card-meta">
+                    <span class="badge badge-blue">Board Game</span>
+                    <span class="badge badge-purple">Group</span>
                 </div>
-                <div id="bottom">
-                    <h1>Pizza dip</h1>
-                </div>
+                <h3 class="card-title">Magia roulette</h3>
+                <p class="card-date">📅 15 January – 24 March · 2024</p>
+                <p class="card-desc">
+                    First board game project developed as a team using "Tabletop Simulator". I was responsible for
+                    designing the environment and the game board.
+                </p>
+                <a href="https://youtu.be/2i_4KTPqQ7w?si=im1fEBVbJIatMyiv" target="_blank" class="card-btn">Watch Demo
+                    →</a>
             </div>
-            <div id="web">
-                <div id="top">
-                    <a href="Assignment/assignment3/assignment_3/recipe.html" target="_blank">
-                        <img src="CSS/Picture/Project/As03.png">
-                    </a>
-                </div>
-                <div id="bottom">
-                    <h1>Tso Chicken</h1>
-                </div>
-            </div>
+        </article>
+    </section>
+
+    <!-- ===== MODELS SECTION ===== -->
+    <section id="models" class="section">
+        <div class="section-header">
+            <div class="section-tag">Category</div>
+            <h2 class="section-title">🧊 Models</h2>
         </div>
-    </div>
-    <div id="animations">
-        <h1>Animations</h1>
-        <div>
-            <div id="animation">
-                <a href="https://youtu.be/L2AmoG9373E" target="_blank">
-                </a>
+
+        <div class="models-grid">
+
+            <!-- Model Card 1 -->
+            <article class="model-card" data-title="Soldier boy" data-software="Autodesk Maya" data-polygons="~8200"
+                data-year="2025" data-desc="" data-images='["CSS/Picture/Project/Model/Pose1.jpg"]'>
+                <div class="model-image">
+                    <button class="model-view-btn" aria-label="View model details">
+                        <img src="CSS/Picture/Project/Model/Pose.png" alt="3D Model 1">
+                        <div class="image-overlay">
+                            <span class="play-icon">🔍 View</span>
+                        </div>
+                    </button>
+                </div>
+                <div class="model-info">
+                    <span class="badge badge-purple">3D Model</span>
+                    <h3 class="model-title">Soldier boy</h3>
+                    <!-- <p class="model-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                        incididunt ut labore.</p> -->
+                </div>
+            </article>
+
+            <!-- Model Card 2 -->
+            <article class="model-card" data-title="Dream House" data-software="Autodesk Maya" data-polygons="~4000"
+                data-year="2024" data-desc=""
+                data-images='["CSS/Picture/Project/Model/house.jpg","CSS/Picture/Project/Model/house1.jpg","CSS/Picture/Project/Model/house2.jpg"]'>
+                <div class="model-image">
+                    <button class="model-view-btn" aria-label="View model details">
+                        <img src="CSS/Picture/Project/Model/house3.jpg" alt="3D Model 2">
+                        <div class="image-overlay">
+                            <span class="play-icon">🔍 View</span>
+                        </div>
+                    </button>
+                </div>
+                <div class="model-info">
+                    <span class="badge badge-purple">3D Model</span>
+                    <h3 class="model-title">Dream House</h3>
+                    <!-- <p class="model-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                        incididunt ut labore.</p> -->
+                </div>
+            </article>
+
+            <!-- Model Card 3 -->
+            <!-- <article class="model-card" data-title="Model Title 3" data-software="Autodesk Maya" data-polygons="~20,000"
+                data-year="2025"
+                data-desc="Short description of this 3D model. Explain the concept, techniques used, and what makes it interesting."
+                data-images='["#","#","#"]'>
+                <div class="model-image">
+                    <button class="model-view-btn" aria-label="View model details">
+                        <img src="#" alt="3D Model 3">
+                        <div class="image-overlay">
+                            <span class="play-icon">🔍 View</span>
+                        </div>
+                    </button>
+                </div>
+                <div class="model-info">
+                    <span class="badge badge-purple">3D Model</span>
+                    <h3 class="model-title">Model Title 3</h3>
+                    <p class="model-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                        incididunt ut labore.</p>
+                </div>
+            </article> -->
+
+            <!-- Model Card 4 -->
+            <!-- <article class="model-card" data-title="Model Title 4" data-software="Autodesk Maya" data-polygons="~5,200"
+                data-year="2025"
+                data-desc="Short description of this 3D model. Explain the concept, techniques used, and what makes it interesting."
+                data-images='["#","#","#"]'>
+                <div class="model-image">
+                    <button class="model-view-btn" aria-label="View model details">
+                        <img src="#" alt="3D Model 4">
+                        <div class="image-overlay">
+                            <span class="play-icon">🔍 View</span>
+                        </div>
+                    </button>
+                </div>
+                <div class="model-info">
+                    <span class="badge badge-purple">3D Model</span>
+                    <h3 class="model-title">Model Title 4</h3>
+                    <p class="model-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                        incididunt ut labore.</p>
+                </div>
+            </article> -->
+
+        </div>
+    </section>
+
+    <footer class="page-footer">
+        <p>© 2025 Natthawut Artnonla · <a href="index.html">Back to Home</a></p>
+    </footer>
+
+    <!-- ===== MODEL MODAL ===== -->
+    <div id="model-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-box">
+            <!-- Close -->
+            <button class="modal-close" id="modal-close-btn" aria-label="Close modal">✕</button>
+
+            <!-- Gallery -->
+            <div class="modal-gallery">
+                <div class="gallery-track" id="gallery-track"></div>
+                <button class="gallery-btn gallery-prev" id="gallery-prev" aria-label="Previous image">&#8249;</button>
+                <button class="gallery-btn gallery-next" id="gallery-next" aria-label="Next image">&#8250;</button>
+                <div class="gallery-dots" id="gallery-dots"></div>
             </div>
-            <div id="animation">
-                <a href="https://youtu.be/TQwOTHZWwQE" target="_blank">
-                </a>
+
+            <!-- Info -->
+            <div class="modal-info">
+                <h2 class="modal-title" id="modal-title"></h2>
+                <div class="modal-meta-grid">
+                    <div class="meta-item">
+                        <span class="meta-label">Software</span>
+                        <span class="meta-value" id="modal-software"></span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Polygons</span>
+                        <span class="meta-value" id="modal-polygons"></span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Year</span>
+                        <span class="meta-value" id="modal-year"></span>
+                    </div>
+                </div>
+                <p class="modal-desc" id="modal-desc"></p>
             </div>
         </div>
     </div>
 </body>
+
 </html>
