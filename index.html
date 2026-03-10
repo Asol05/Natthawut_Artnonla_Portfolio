@@ -1,138 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NATTHAWUT ARTNONLA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/home_page.css">
-    <script src="JS/home_page.js"></script>
 </head>
+
 <body>
 
+    <!-- ===== SIDEBAR (mobile) ===== -->
     <div id="side-menubar">
-        <div>
-            <button id="closesidebar"><img src="CSS/Picture/Icon/cancel.png"></button>
-            <a href="#aboutMe">About Me</a>
-            <a href="#experience">Experience</a>
-            <a href="project.html">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#education">Education</a>
-            <a href="#footer">Contact</a>
+        <div class="sidebar-inner">
+            <button id="closesidebar" aria-label="Close menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <nav class="sidebar-nav">
+                <a href="#aboutMe">About Me</a>
+                <a href="#experience">Experience</a>
+                <a href="project.html">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#footer">Contact</a>
+            </nav>
         </div>
     </div>
+    <div id="sidebar-overlay"></div>
 
-    <a id="showsidebar">
-        <img src="CSS/Picture/Icon/menu.png">
-    </a>
+    <!-- ===== TOP NAVBAR ===== -->
+    <header class="navbar" id="navbar">
+        <!-- Hamburger (visible ≤560px) -->
+        <button id="showsidebar" aria-label="Open menu">
+            <span></span><span></span><span></span>
+        </button>
 
-    <div class="container">
-        <div class="menu" id="menu">
-            <button><a href="#aboutMe">About Me</a></button>
-            <button><a href="#experience">Experience</a></button>
-            <button><a href="project.html">Projects</a></button>
-            <button><a href="#skills">Skills</a></button>
-            <button><a href="#education">Education</a></button>
-            <button><a href="#footer">Contact</a></button>
-        </div>
-        <div class="name_and_position">
-            <div>
-                <h1>NATTHAWUT ARTNONLA</h1>
-                <hr>
-                <h2>GAME DEVELOPER</h2>
-                <div class="doc_btn">
-                    <a href="CSS/Picture/Other/Natthawut_Artnonla_Resume.pdf" download><button>Resume <img src="CSS/Picture/Icon/724933.png"></button></a>
-                    <a href="CSS/Picture/Other/Natthawut_Artnonla_Transcript.pdf"><button>Transcript <img src="CSS/Picture/Icon/724933.png"></button></a>
-                </div>
+        <div class="nav-logo">N<span class="accent">.</span>A</div>
+
+        <nav class="nav-links">
+            <a href="#aboutMe" class="nav-link">About Me</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="project.html" class="nav-link nav-link-projects">Projects ↗</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#footer" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-eyebrow">Hello, I'm</p>
+            <h1 class="hero-name">NATTHAWUT<br><span class="gradient-text">ARTNONLA</span></h1>
+            <hr class="hero-divider">
+            <h2 class="hero-role">Game Developer</h2>
+            <div class="hero-btns">
+                <a href="CSS/Picture/Other/Natthawut_Artnonla_Resume.pdf" download class="btn btn-primary">
+                    Resume
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <polyline points="7 10 12 15 17 10" />
+                        <line x1="12" y1="15" x2="12" y2="3" />
+                    </svg>
+                </a>
+                <a href="CSS/Picture/Other/Natthawut_Artnonla_Transcript.pdf" target="_blank" class="btn btn-outline">
+                    Transcript
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                        <polyline points="15 3 21 3 21 9" />
+                        <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
+                </a>
             </div>
         </div>
-    </div>
-
-    <div id="BG">
-        <div id="aboutMe">
-            <hr>
-            <br>
-            <h1>About Me</h1>
-            <br>
-            <div id="left">
-                <img src="CSS/Picture/Other/asic.jpg">
-                <h3>Hi!! I'm Natthawut Artnonla</h3>
-            </div>
-            <div id="right">
-                <p>I have always been passionate about playing games, and it has inspired me to determined to pursue 
-                    a degree in Technology Media, majoring in Game Development. I discover my interest and aptitude for programming,
-                     which motivated me to actively seek hands-on experience as a game developer during every summer break.
-                </p>
-                <div id="contact">
-                    <a id="email"><img src="CSS/Picture/Icon/19578_0.jpg"> natthawutartnonladev@gmail.com</a>
-                    <a id="tel"><img src="CSS/Picture/Icon/19579_0.jpg"> 0628921165</a>
-                    <a id="ig" href="https://www.instagram.com/a.sol_05/" target="_blank"><img src="CSS/Picture/Icon/instagram_logo_icon_189247.png"> asol_05 </a>
-                    <a id="linkedIn" href="https://www.linkedin.com/in/natthawut-artnonla-027340320/" target="_blank"><img src="CSS/Picture/Icon/19580_0.jpg"> Natthawut Artnonla</a>
-                </div>
-            </div>
-            <br>
-            <hr>
+        <div class="hero-scroll-hint">
+            <span></span>Scroll
         </div>
+    </section>
 
-        <div id="experience">
-            <h1>Experience</h1>
-            <br>
-            <div id="workInfo">
-                <div id="comany">
-                    <img src="CSS/Picture/Other/CorePolygon.png">
-                    <h3>Core Polygon Limited</h3>
+    <!-- ===== MAIN CONTENT ===== -->
+    <main id="main-content">
+
+        <!-- About Me -->
+        <section id="aboutMe" class="content-section">
+            <div class="section-label">01</div>
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-photo">
+                    <img src="CSS/Picture/Other/asic.jpg" alt="Natthawut Artnonla">
+                    <div class="photo-glow"></div>
                 </div>
-                <div id="jd">
-                    <div id="details">
-                        <h4>Unity Developer | Remote</h4>
-                        <h4>June - July 2025</h4>
+                <div class="about-text">
+                    <h3 class="about-name">Hi, I'm Natthawut Artnonla 👋</h3>
+                    <p class="about-bio">
+                        I have always been passionate about playing games, and it inspired me to pursue a degree in
+                        Technology Media, majoring in Game Development. I discovered my interest and aptitude for
+                        programming, which motivated me to actively seek hands-on experience as a game developer
+                        during every summer break.
+                    </p>
+                    <div class="contact-chips">
+                        <a class="chip" href="mailto:natthawutartnonladev@gmail.com">
+                            <img src="CSS/Picture/Icon/19578_0.jpg" alt="email">
+                            natthawutartnonladev@gmail.com
+                        </a>
+                        <a class="chip">
+                            <img src="CSS/Picture/Icon/19579_0.jpg" alt="phone">
+                            062-892-1165
+                        </a>
+                        <a class="chip" href="https://www.linkedin.com/in/natthawut-artnonla-027340320/"
+                            target="_blank">
+                            <img src="CSS/Picture/Icon/19580_0.jpg" alt="linkedin">
+                            Natthawut Artnonla
+                        </a>
                     </div>
-                    <p>I have completed a two-month remote internship, which allowed me to strengthen my development and collaboration skills.
-                        I’ve gained practical skills in Unity (C#) and version control using Git
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="content-section">
+            <div class="section-label">02</div>
+            <h2 class="section-title">Experience</h2>
+
+            <div class="exp-card">
+                <div class="exp-company">
+                    <img src="CSS/Picture/Other/CorePolygon.png" alt="Core Polygon Limited">
+                    <div class="exp-company-meta">
+                        <h3>Core Polygon Limited</h3>
+                        <div class="exp-badges">
+                            <span class="badge badge-blue">Remote</span>
+                            <span class="badge badge-purple">1 Month 26 days</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="exp-divider"></div>
+                <div class="exp-details">
+                    <div class="exp-header">
+                        <span class="exp-role">Unity Developer</span>
+                        <span class="exp-date">5 June – 31 July 2025</span>
+                    </div>
+                    <p class="exp-desc">
+                        Completed a 2-month remote internship developing two 2D games in Unity using Git for team
+                        collaboration. I had learnt design patterns for player skills and UI systems to improve
+                        maintainability. Applied lazy update techniques to optimize performance by avoiding unnecessary
+                        per-frame processing. Structured character systems using the MVC (Model–View–Controller)
+                        pattern. Developed dynamic UI instantiation with prefabs to reduce scene conflicts and improve
+                        Git workflow.
                     </p>
                 </div>
             </div>
-            <br>
-            <hr>
-        </div>
+        </section>
 
-        <div id="skills">
-            <h1>Strengths and Expertise</h1>
-            <div id="skillsicon">
-                <img src="CSS/Picture/Skills/unity.png">
-                <img src="CSS/Picture/Skills/maya.webp">
-                <img src="CSS/Picture/Skills/vscode.jpg">
-                <img src="CSS/Picture/Skills/git.png">
-                <img src="CSS/Picture/Skills/github.png">
-                <img src="CSS/Picture/Skills/gitlab.png">
-                <img src="CSS/Picture/Skills/sourcetree.jpg">
-                <img src="CSS/Picture/Skills/cshape.png">
-                <img src="CSS/Picture/Skills/html5.png">
-                <img src="CSS/Picture/Skills/css.png">
-                <img src="CSS/Picture/Skills/javascript.png">
+        <!-- Skills -->
+        <section id="skills" class="content-section">
+            <div class="section-label">03</div>
+            <h2 class="section-title">Strengths &amp; Expertise</h2>
+            <div class="skills-grid">
+
+                <!-- Game Dev -->
+                <div class="skill-card">
+                    <img src="CSS/Picture/Skills/unity.png" alt="Unity">
+                    <div class="skill-info">
+                        <h4>Unity</h4>
+                        <p>Primary engine for 2D/3D game development and mobile publishing.</p>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <img src="CSS/Picture/Skills/cshape.png" alt="C#">
+                    <div class="skill-info">
+                        <h4>C#</h4>
+                        <p>Main scripting language for game logic, systems and tools in Unity.</p>
+                    </div>
+                </div>
+
+                <!-- 3D & Version Control -->
+                <div class="skill-card">
+                    <img src="CSS/Picture/Skills/maya.webp" alt="Maya">
+                    <div class="skill-info">
+                        <h4>Autodesk Maya</h4>
+                        <p>3D modelling and rigging for game-ready assets and animations.</p>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <img src="CSS/Picture/Skills/git.png" alt="Git">
+                    <div class="skill-info">
+                        <h4>Git</h4>
+                        <p>Version control for solo and team-based game projects.</p>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <img src="CSS/Picture/Skills/github.png" alt="GitHub">
+                    <div class="skill-info">
+                        <h4>GitHub</h4>
+                        <p>Remote repository hosting, pull requests and code review.</p>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <img src="CSS/Picture/Skills/gitlab.png" alt="GitLab">
+                    <div class="skill-info">
+                        <h4>GitLab</h4>
+                        <p>CI/CD pipelines and project management used during internship.</p>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <img src="CSS/Picture/Skills/sourcetree.jpg" alt="Sourcetree">
+                    <div class="skill-info">
+                        <h4>Sourcetree</h4>
+                        <p>GUI Git client for managing branches and merge workflows.</p>
+                    </div>
+                </div>
+
+                <!-- Web -->
+                <div class="skill-card">
+                    <img src="CSS/Picture/Skills/html5.png" alt="HTML5">
+                    <div class="skill-info">
+                        <h4>HTML5</h4>
+                        <p>Semantic markup for building accessible and structured web pages.</p>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <img src="CSS/Picture/Skills/css.png" alt="CSS">
+                    <div class="skill-info">
+                        <h4>CSS3</h4>
+                        <p>Responsive layouts, animations and modern visual styling.</p>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <img src="CSS/Picture/Skills/javascript.png" alt="JavaScript">
+                    <div class="skill-info">
+                        <h4>JavaScript</h4>
+                        <p>Interactive UI logic and DOM manipulation for web portfolio.</p>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <img src="CSS/Picture/Skills/vscode.jpg" alt="VS Code">
+                    <div class="skill-info">
+                        <h4>VS Code</h4>
+                        <p>Primary code editor with extensions for Unity, web and Git.</p>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <img src="CSS/Picture/Skills/antigravity.png" alt="Antigravity">
+                    <div class="skill-info">
+                        <h4>Antigravity</h4>
+                        <p>Primary code editor with vibe coding.</p>
+                    </div>
+                </div>
+
             </div>
-            <br>
-            <hr>
-        </div>
+        </section>
 
-        <div id="education">
-            <h1>Education</h1>
-            <div id="university">
-                <h4>King Mongkut's University of Technology Thonburi</h4>
-                <h4>2023 - Present</h4>
-                <h4>Technology Media | Game Development</h4>
-                <h4>GPAX : 3.26</h4>
+        <!-- Education -->
+        <section id="education" class="content-section">
+            <div class="section-label">04</div>
+            <h2 class="section-title">Education</h2>
+            <div class="edu-card">
+                <div class="edu-icon">🎓</div>
+                <div class="edu-info">
+                    <div class="edu-row">
+                        <h3>King Mongkut's University of Technology Thonburi</h3>
+                        <span class="edu-year">2023 – Present</span>
+                    </div>
+                    <p class="edu-major">Technology Media &nbsp;|&nbsp; Game Development</p>
+                    <p class="edu-gpa">GPAX: <strong>3.26</strong></p>
+                </div>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <div id="footer">
-        Contact Me
-        <div id="contact_me">
-            <a><img src="CSS/Picture/Icon/19578_0.jpg"> natthawutartnonladev@gmail.com</a>
-            <a><img src="CSS/Picture/Icon/19579_0.jpg"> 0628921165</a>
-            <a id="ig" href="https://www.instagram.com/a.sol_05/" target="_blank"><img src="CSS/Picture/Icon/instagram_logo_icon_189247.png"> asol_05 </a>
-            <a href="https://www.linkedin.com/in/natthawut-artnonla-027340320/" target="_blank"><img src="CSS/Picture/Icon/19580_0.jpg"> Natthawut Artnonla</a>
-        </div>        
-    </div>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer id="footer">
+        <p class="footer-heading">Contact Me</p>
+        <div class="footer-links">
+            <a href="mailto:natthawutartnonladev@gmail.com">
+                <img src="CSS/Picture/Icon/19578_0.jpg" alt="email"> natthawutartnonladev@gmail.com
+            </a>
+            <a>
+                <img src="CSS/Picture/Icon/19579_0.jpg" alt="phone"> 0628921165
+            </a>
+            <a href="https://www.linkedin.com/in/natthawut-artnonla-027340320/" target="_blank">
+                <img src="CSS/Picture/Icon/19580_0.jpg" alt="linkedin"> Natthawut Artnonla
+            </a>
+        </div>
+        <p class="footer-copy">© 2025 Natthawut Artnonla</p>
+    </footer>
+
+    <script>
+        // ----- Navbar scroll shadow -----
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 40);
+        });
+
+        // ----- Sidebar toggle -----
+        const showBtn = document.getElementById('showsidebar');
+        const closeBtn = document.getElementById('closesidebar');
+        const sidebar = document.getElementById('side-menubar');
+        const overlay = document.getElementById('sidebar-overlay');
+
+        function openSidebar() {
+            sidebar.classList.add('open');
+            overlay.classList.add('open');
+            document.body.classList.add('no-scroll');
+        }
+        function closeSidebar() {
+            sidebar.classList.remove('open');
+            overlay.classList.remove('open');
+            document.body.classList.remove('no-scroll');
+        }
+
+        showBtn.addEventListener('click', openSidebar);
+        closeBtn.addEventListener('click', closeSidebar);
+        overlay.addEventListener('click', closeSidebar);
+
+        // Close sidebar when a link is clicked
+        document.querySelectorAll('.sidebar-nav a').forEach(link => {
+            link.addEventListener('click', closeSidebar);
+        });
+
+        // ----- Scroll-reveal animation -----
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                    observer.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.12 });
+
+        document.querySelectorAll('.content-section').forEach(el => observer.observe(el));
+    </script>
+
 </body>
+
 </html>

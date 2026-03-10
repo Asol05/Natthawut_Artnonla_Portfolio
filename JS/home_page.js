@@ -1,3 +1,4 @@
+console.log("init")
 window.onload = pagelond;
 
 var menu = null
@@ -21,9 +22,17 @@ function initbtn(){
     closesidebar.addEventListener("click" , () =>{
         sidebar.style.display = 'none'
         showsidebar.style.display = 'flex'
+
+        if(window.innerWidth > 560){
+            showsidebar.style.display = 'none'
+        }
     })
 }
 
+function hideshowsidebar(){
+    if(window.innerWidth > 560){
+        showsidebar.style.display = 'none'
+    }
+}
 
-
-
+setInterval(hideshowsidebar, 50);
