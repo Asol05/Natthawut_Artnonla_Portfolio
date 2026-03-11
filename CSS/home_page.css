@@ -613,8 +613,8 @@ a {
 }
 
 .exp-company img {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border-radius: 16px;
     object-fit: contain;
     background: rgba(255, 255, 255, 0.06);
@@ -905,12 +905,15 @@ a {
     }
 
     .exp-company {
+        width: 100%;
         flex-direction: column;
     }
 
-    .exp-company img {
-        width: 64px;
-        height: 64px;
+    .exp-company-meta{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
 
     .exp-header {
